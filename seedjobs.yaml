@@ -1,0 +1,7 @@
+seedJobs:
+  - id: jobs-a  # Seed Job 的唯一标识符
+    targets: "cicd/jobs/*.jenkins"  # 指定 Job DSL 脚本的位置（相对于代码仓库的路径）
+    description: "Jenkins Operator repository"  # Seed Job 的描述
+    repositoryBranch: master  # Git 仓库分支
+    repositoryUrl: https://example.com/jenkinsci/kubernetes-operator.git  # Git 仓库地址
+#    configurationUrl: "https://example.com/seed-jobs.yaml"  # 可选：其他配置 URL
